@@ -18,14 +18,6 @@
             "debugOptions": []
         },
         {
-            "name": "Attach",
-            "type": "cppdbg",
-            "request": "attach",
-            "miDebuggerServerAddress": "localhost:55555",
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\tools\\mingw64\\bin\\gdb.exe"
-        },
-        {
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
