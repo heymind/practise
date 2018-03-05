@@ -5,10 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Integrated Terminal/Console",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${file}",
+            "cwd": "",
+            "console": "externalTerminal",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "debugOptions": []
+        },
+        {
+            "name": "Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "miDebuggerServerAddress": "localhost:55555",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\tools\\mingw64\\bin\\gdb.exe"
+        },
+        {
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask":"build",
+            "preLaunchTask": "build",
             "program": "${workspaceFolder}/a.exe",
             "args": [],
             "stopAtEntry": false,
@@ -25,6 +46,5 @@
                 }
             ]
         }
-        
     ]
 }
